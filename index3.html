@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon8.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <title>Manual de PRL</title>
+</head>
+<body>
+    <header>
+        
+        <h1 style="font-weight: 800"><img src="img/Día-logo.png" width="100" height="80" alt="Día-logo"> Manual de Prevención de Riesgos Laborales</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index2.html">Información</a>
+        <a href="index3.html">Autoevaluación</a>
+        <a href="index4.html">Reconocimiento médico</a>
+        <a href="index5.html">Contacto</a>
+    </nav>
+
+    <section id="preguntas">
+        <h2 style="font-weight: 800">Formación/Autoevaluación</h2>
+        <p><span style="background-color: cornsilk; font-size: large;">1. Riesgo ergonómico</span><br><video width=50% controls preload="auto" muted><source src="video/video1-riesgo-ergonómico.mp4" type="video/mp4">Tu navegador no soporta el vídeo</video></p>
+        <p><span style="background-color: cornsilk; font-size: large;">2. Riesgo de radiación</span><br><video width=50% controls preload="auto" muted><source src="video/video2-riesgo-radiación.mp4" type="video/mp4">Tu navegador no soporta el vídeo</video></p>
+        <p><span style="background-color: cornsilk; font-size: large;">3. Riesgo de seguridad informática</span><br><video width=50% controls preload="auto" muted><source src="video/video3-riesgo-seguridad-informática.mp4" type="video/mp4">Tu navegador no soporta el vídeo</video></p>
+        <p><span style="background-color: cornsilk; font-size: large;">4. Riesgo eléctrico</span><br><video width=50% controls preload="auto" muted><source src="video/video4-riesgo-eléctrico.mp4" type="video/mp4">Tu navegador no soporta el vídeo</video></p>
+    </section>
+
+    <button id="btnEvaluar" style="font-size: medium;" onclick="evaluar()">Evaluar</button><br><br><br>
+    <script>
+        function evaluar() {
+          // Mostrar mensaje
+          alert("¡Lo has conseguido!");
+        
+          // Datos ficticios del empleado (reemplazar con datos reales)
+          const nombreEmpleado = "Juan Pérez";
+          const puestoEmpleado = "Analista de Seguridad";
+          const fechaEvaluacion = new Date().toLocaleDateString();
+        
+          // Crear certificado ficticio
+          const certificado = `
+            <h2>Certificado de Autoevaluación en PRL</h2>
+            <p>Este certificado se otorga a:</p>
+            <p><strong>Nombre:</strong> ${nombreEmpleado}</p>
+            <p><strong>Puesto:</strong> ${puestoEmpleado}</p>
+            <p><strong>Fecha de Evaluación:</strong> ${fechaEvaluacion}</p>
+            <p>Por haber superado la autoevaluación en materia de Prevención de Riesgos Laborales.</p>
+            <p>Firma:</p>
+          `;
+        
+          // Crear ventana emergente con el certificado
+          const ventanaCertificado = window.open('', '_blank');
+          ventanaCertificado.document.write(certificado);
+        }
+        </script>
+
+    <footer id="contacto">
+        <p>&copy; Día, Madrid - 2024</p>
+    </footer>
+</body>
+</html>  
+
+
+
+ 
+
